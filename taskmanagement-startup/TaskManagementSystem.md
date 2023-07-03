@@ -9,6 +9,13 @@ opt to create custom components or leverage pre-existing tools like Hasura or Su
 The task management system is an application composed of three main components: a backend server, a frontend client, and
 a database.
 
+## How this challenge works:
+
+This is an advanced challenge to show that you can build real world applications. If you want to be a Full-Stack
+Developer, then you can create and design the system on your own.
+
+TODO: Deploy the sample components somewhere.
+
 ### Backend
 
 The backend of your system should be capable of processing API requests for various operations, including user
@@ -59,22 +66,23 @@ making it easy to start and stop your application, manage your database, and mor
 
 Here are the core functionalities that your system should implement:
 
-1. **User Authentication**: Users should be able to register, log in, and log out of the system.
-2. **Project Creation and Management**: Authenticated users should be able to create and manage projects.
-3. **Task Creation and Assignment**: Users should be able to create tasks, assign them to other users, and monitor their
+1. **Project Creation and Management**: Authenticated users should be able to create and manage projects.
+2. **Task Creation and Assignment**: Users should be able to create tasks, assign them to other users, and monitor their
    progress.
-4. **Notification System**: Users should receive notifications when a task is assigned to them or when a task's deadline
-   is approaching.
 
 ## Optional Features
 
 Here are some additional features that you might consider implementing if you have time:
 
-1. **Task Prioritization**: Allow users to prioritize tasks within a project.
-2. **Progress Tracking**: Provide a visual representation of task and project progress.
-3. **Comments and File Attachments**: Let users leave comments on tasks and attach relevant files.
+1. **User Authentication**: Users should be able to register, log in, and log out of the system.
+2. **Task Prioritization**: Allow users to prioritize tasks within a project.
+3. **Progress Tracking**: Provide a visual representation of task and project progress.
+4. **Comments and File Attachments**: Let users leave comments on tasks and attach relevant files.
 5. **User Roles and Permissions**: Implement a system of user roles and permissions to control access to tasks and
    projects.
+6. **Notification System**: Users should receive notifications when a task is assigned to them or when a task's
+   deadline
+   is approaching.
 
 Remember, the most important aspect of this challenge is creating a functional application. Focus on implementing the
 core functionality first, then work on optional features as time permits. Good luck!
