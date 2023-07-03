@@ -9,7 +9,7 @@ part of us?
 Forget about dry, whiteboard interviews or theoretical LeetCode questions. We prioritize a harmonious team fit, hands-on
 experience, critical thinking, and a structured problem-solving approach.
 
-In this repository, you'll find a series of challenges designed to mirror the kind of work we do at SelectCode. Choose
+In this repository, you' ll find a series of challenges designed to mirror the kind of work we do at SelectCode. Choose
 one (or more!) to showcase your skills and apply for a position with us.
 
 ## How to Get Started?
