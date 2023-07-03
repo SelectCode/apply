@@ -1,26 +1,38 @@
-# Apply to SelectCode
+# Join SelectCode
+
 ## SelectCode Application Challenges
 
-SelectCode builds startups as a service and helps other companies to reach their IT and sustainability goals.
-We consist of 15 skilled student team members and are always looking for more people to join.
+Welcome to SelectCode, where we turn innovative ideas into startup realities and help companies achieve their IT and
+sustainability goals. Our team consists of 15 talented students committed to making a difference. Are you ready to be a
+part of us?
 
-We value a good team fit, practical experience, critical thinking, structured problem solving more than whiteboard interviews or LeetCode.
+Forget about dry, whiteboard interviews or theoretical LeetCode questions. We prioritize a harmonious team fit, hands-on
+experience, critical thinking, and a structured problem-solving approach.
 
-In this repository there are a few challenges that you can take in order to apply to a SelectCode job.
+In this repository, you'll find a series of challenges designed to mirror the kind of work we do at SelectCode. Choose
+one (or more!) to showcase your skills and apply for a position with us.
 
+## How to Get Started?
 
-## How to tackle a challenge?
+1. **Fork** this repository.
+2. Submit your code to your repository.
+3. Once you're satisfied with your solution, send us the link to your repository, making sure to highlight your personal
+   contributions.
 
-Fork this repository, submit code to your repository and send us the link your personal contrinution.
+## How will my solutions be evaluated?
 
-## How are my answers evaluated?
+We take a holistic approach to evaluation. We're interested not only in the end result but also in your journey to
+arrive there. We'll review your commits to understand how you approached and tackled the challenge.
 
-We take a look at your commits, how to tackled the challenge. It helps when you document your way.
+Remember, **documentation** is key! Comment your code to explain your thought process, the decisions you made, and the
+strategies you employed.
 
 ## Can I use ChatGPT for coding?
 
-We use ChatGPT in our everyday life, so yes you can. At least you should it for research and finding a good approach.
-Just make sure that if you use chatgpt, the focus shifts from developing to debugging.
+Absolutely! We use ChatGPT in our everyday tasks, and we encourage you to leverage its power, too. It's a great tool for
+research and finding novel approaches to the challenges.
 
-If you use ChatGPT, you can include a link of your ChatGPT Chat to let us see how you faced the problem.
+Just remember, using ChatGPT shifts the focus from pure development to debugging and improvement. If you're using
+ChatGPT, consider including a link of your ChatGPT chat so we can appreciate your problem-solving journey.
 
+Best of luck with the challenges! We can't wait to see your solutions and hopefully welcome you to our team.

@@ -7,6 +7,12 @@ of points.
 
 [//]: # (TODO: Include photo)
 
+OLD:
+Please describe a rough approach of how you would find the distance between the two blob cluster centers in the
+following image. Assume that third parties are taking pictures of the paper sheets. We would also like you to describe
+what you expect to work well and what potential issues your approach might have. If you have multiple ideas, please
+discuss their tradeoffs.
+
 ## Tips:
 
 - The Paper is the size of a A4 paper sheet
