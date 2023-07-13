@@ -1,0 +1,191 @@
+---
+title: SelectCode Application Challenges
+---
+
+import { Feature, Features } from '../components/features'
+import { ArrowRightIcon } from '../components/icons'
+import Image from 'next/image'
+import Link from 'next/link'
+import docsCard from '../public/assets/team.webp'
+import styles from './index.module.css'
+
+<div className="home-content">
+    <div className="content-container">
+        <h1 className="headline">Real world challenges <br className='sm:block hidden'/>by SelectCode 🚀</h1>
+        <p className="subtitle">Powerful challenges to learn how to build the next generation of startups <br className='sm:block hidden'/>with <a className="nextjs-link" href="https://www.selectcode.de" target="_blank">SelectCode</a>.</p>
+        <p className="subtitle">
+            <Link className={styles.cta} href="/home">Get started <span>→</span></Link>
+        </p>
+    </div>
+    <style jsx>{`
+    .content-container {
+      max-width: 90rem;
+      padding-left: max(env(safe-area-inset-left),1.5rem);
+      padding-right: max(env(safe-area-inset-right),1.5rem);
+      margin: 0 auto;
+    }
+    .features-container {
+      margin: 8rem 0 0;
+      padding: 4rem 0;
+      background-color: #f3f4f6;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .features-container .content-container {
+      margin-top: -8rem;
+    }
+    :global(.dark) .features-container {
+      background-color: #000;
+      border-bottom: 1px solid rgb(38,38,38);
+    }
+    .headline {
+      display: inline-flex;
+      font-size: 3.125rem;
+      font-size: min(4.375rem, max(8vw, 2.5rem));
+      font-weight: 700;
+      font-feature-settings: initial;
+      letter-spacing: -.12rem;
+      margin-left: -0.2rem;
+      margin-top: 3.4rem;
+      line-height: 1.1;
+      background-image: linear-gradient(146deg,#000,#757a7d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    :global(.dark) .headline {
+      background-image: linear-gradient(146deg,#fff,#757a7d);
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      font-size: min(1.3rem, max(3.5vw, 1.2rem));
+      font-feature-settings: initial;
+      line-height: 1.6;
+    }
+    .nextjs-link {
+      color: currentColor;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    :global(#docs-card) {
+      color: #fff;
+      text-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    }
+    :global(#docs-card img) {
+      object-fit: cover;
+      object-position: left;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+    :global(#docs-card img:nth-child(2)) {
+      display: none;
+    }
+    :global(.dark #docs-card img:nth-child(2)) {
+      display: initial;
+    }
+    :global(.dark #docs-card img:nth-child(1)) {
+      display: none;
+    }
+    :global(#highlighting-card) {
+      min-height: 300px;
+      background-image: linear-gradient(to top, transparent, #fff 50%), url(/assets/syntax-highlighting.svg);
+      background-size: 634px;
+      background-position: -6px calc(100% + 4px);
+      background-repeat: no-repeat;
+    }
+    :global(.dark #highlighting-card) {
+      background-image: linear-gradient(to top, transparent, #202020 50%), url(/assets/syntax-highlighting.svg);
+    }
+  `}</style>
+
+    <div className="features-container">
+        <div className="content-container">
+            <Features>
+                <Feature index={0} large centered id="docs-card">
+                    <Image src={docsCard} alt="Background" loading="eager" />
+                    <h3>Join the team <br className="show-on-mobile"/> and develop impact startups</h3>
+                </Feature>
+                <Feature index={1} centered className="card-with-border" href="/docs/guide/image">
+                    <div className="h-full flex flex-col justify-between">
+                        <h3>Use a modern software stack <br className="show-on-mobile"/> that <span style={{ fontWeight: 300 }}>scales</span>.</h3>
+                        <p className='text-left mb-8'>We rely on modern cloud services and programming languages to deliver software that is awesome for our customers.</p>
+                        <div>
+                            <div className={styles.optimization}>
+                                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                                    <code>{`<?php`}</code>
+                                    <br/>
+                                    <code>{`echo "Hello, world!";`}</code>
+                                </div>
+                            </div>
+                            <ArrowRightIcon width="1.2em" className="text-neutral-400 rotate-90 my-6 mx-auto" />
+                            <div className={styles.optimization}>
+                                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                                    <code>{`let greeting: string = "Hello, world!";`}</code>
+                                    <br/>
+                                    <code>{`console.log(greeting);`}</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Feature>
+                <Feature index={2} id="highlighting-card" href="/docs/guide/syntax-highlighting">
+                    <h3>Learn to code <br className="show-on-mobile"/> awesome software</h3>
+                    <p>We build products using the latest technology like Next.js, GraphQL and Flutter.</p>
+                </Feature>
+                <Feature index={3} href="https://www.selectcode.de/case-studies">
+                    <h3>Solve <br className="show-on-mobile"/> <b>real world</b> problems</h3>
+                    <p className='mb-4'>We build products that are used all over the world with working students. Do a job that matters.</p>
+                </Feature>
+                <Feature index={4} centered style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundImage: 'url(/assets/gradient-bg.jpeg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    color: '#fff'
+                }} href="/docs/guide/markdown">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="78.628 83.978 259.338 175.929"
+                    >
+                        <g data-name="Layer 2" transform="translate(78.632 83.971)">
+                            <g data-name="Capa 1">
+                                <path
+                                    fill="rgba(144, 203, 62, 0)"
+                                    d="M95.14 27.84l39.79 7.9-8.57 6.36a198 198 0 00-26.89 24.14l-1.83 1.91L45 58.37zM126.42 118.24l2.48-.81a183.82 183.82 0 0033.21-13l9.5-4.77-12.91 41.18-49.77 30.72z"
+                                    className="cls-1"
+                                ></path>
+                                <path
+                                    fill="rgba(144, 203, 62, 0)"
+                                    d="M81.475 85.789L87 82.23c53.06-73.88 136.87-78 161.12-77.57l7-.17-3.21 6.84c-11.26 22.5-55.46 97.23-142.46 110.17l-3 .68-24.975-36.391zM192.72 30.61c-8.23-2.13-16.37 3-18.57 11.52-2.2 8.52 2.53 17 10.67 19.07 8.14 2.07 16.37-3 18.57-11.52a16.673 16.673 0 00-1.48-11.82c-2.28-3.58-5.32-6.22-9.19-7.22v-.03z"
+                                    className="cls-1"
+                                ></path>
+                                <path
+                                    fill="#FFF"
+                                    d="M255.21.3c-42.16-2.3-84.11 9-121.07 30.9l-38.53-7.58a4.841 4.841 0 00-3.35.58L42.49 54.93a4.6 4.6 0 00-1.63 6.3 4.19 4.19 0 002.65 2.13l.39.1 44.76 8.25c-2.817 3.282-7.607 7.299-9.937 10.942-.86 1.74-1.389 2.227-.479 3.907l23.386 38.181a3.84 3.84 0 004.52 2.09c4.35-.83 8.67-1.58 13-2.42l-14.93 45.41a5 5 0 002.59 5.94 5.28 5.28 0 003.84-.45l49.77-30.75a4.281 4.281 0 002.06-2.78L175 102c36.25-22.7 65-55.95 83.9-95.19a4.83 4.83 0 00-2.4-6.4h-.08a2.174 2.174 0 01-1.21-.11zM57.93 56l37.72-23.3 27.95 5.77A198.664 198.664 0 0096.1 63l-38.17-7zM155 137.56l-37.73 23.3 12.92-39.21a151.576 151.576 0 0033.75-13.23L155 137.56zm-46.14-20.49L89.11 85.023c52-71.78 135.49-76.343 158.68-75.633C236.76 31 194 104.09 108.85 117.11l.01-.04z"
+                                    className="cls-2"
+                                ></path>
+                                <path
+                                    fill="#FFF"
+                                    d="M13.67 124.12a4.09 4.09 0 003.35-.58l50.91-31.37a4.59 4.59 0 001.65-6.28A4.07 4.07 0 0064.1 84a5.09 5.09 0 00-.54.32l-50.74 30.9c-2.22 1.39-3.28 3.9-2 6.19a4 4 0 002.85 2.71zM60.3 125.12a4.07 4.07 0 00-5.46-1.87 5.09 5.09 0 00-.54.32L3.44 154.94a5.31 5.31 0 00-3.37 5.85c.29 2.45 3.17 3.71 5.52 3.39.52-.39 1.49-.55 2.22-1.39l50.87-31.38a4.6 4.6 0 001.63-6.29zM91.54 134.12l-50.86 31.37c-2.22 1.39-3.28 3.91-2 6.2s3.78 3.35 5.88 2l.51-.38L95.93 142a4.66 4.66 0 001.24-6.39 4.52 4.52 0 00-5.62-1.45zM183.688 65.025c10.797 2.684 21.287-3.182 23.982-13.795 2.857-11.251-3.52-22-13.88-24.66-10.75-2.77-21.3 4.1-24.08 14.85-1.359 5.195-.539 10.151 2.102 14.826 2.566 4.55 6.806 7.519 11.876 8.779zM183 36.19c4.864-3.198 11.399-1.856 14.61 3 .18.28.35.57.5.86 3.19 5.454 1.381 12.461-4.05 15.69-5.247 2.945-11.883 1.24-15.06-3.87-3.211-5.424-1.421-12.424 4-15.64v-.04z"
+                                    className="cls-2"
+                                ></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <p style={{
+                        textShadow: '0 2px 4px rgb(0 0 0 / 20%)'
+                    }}><a href="https://www.selectcode.de" target="_blank" style={{ color: 'currentColor' }}>SelectCode</a> builds Startups as a Service, <br className="hide-medium"/>with a focus on performance and reliabilty.</p>
+                </Feature>
+            </Features>
+        </div>
+    </div>
+</div>

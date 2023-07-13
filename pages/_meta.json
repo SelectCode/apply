@@ -1,0 +1,13 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "home": "🏠 Home",
+  "getting_started": "🚀 Getting Started",
+  "challenges": "🏆 Challenges"
+}
