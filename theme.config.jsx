@@ -58,5 +58,7 @@ export default {
         .
       </span>
         )
-    }
+    },
+    docsRepositoryBase: 'https://github.com/SelectCode/apply/tree/master',
 }
+
