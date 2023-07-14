@@ -1,0 +1,52 @@
+# Computer Vision Challenge: Sit Bone Measurement
+
+## Introduction
+
+Welcome to the Sit Bone Measurement challenge! In this exercise, you will employ traditional computer vision techniques such as blob detection, edge detection, and clustering to measure the distance between the sit bones. This distance is crucial in determining the right size of a bike saddle.
+
+## Context
+
+When a person sits on a chair with plastic knobs, their weight pressures through a paper, leaving marks that can be used to measure the distance between the sit bones. For a visual demonstration, watch this YouTube Video.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QOjvLEp_gX4" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+## Example Input
+
+![Image](/challenges/blob.jpg)
+
+## Challenge
+
+Your task is to write a Python notebook that uses OpenCV to find the middle point between two clusters of points left by the sit bones on the paper.
+
+You will use a provided image and apply the following high-level process:
+
+1. Segmentation of the paper.
+2. Blob detection.
+3. Clustering of the blobs.
+4. Calculation of the distance between the two centers of the blob clusters.
+
+Remember, the paper is the size of an A4 sheet, and the markers on the papers are ArUco markers.
+
+## Guidelines
+
+To help you get started, here's a broad approach:
+
+1. **Paper Detection and Rectification:** Find the edges of the paper using a Canny filter applied to the grayscale image. Approximate the closed contours found to rectangles. Project the recognized rectangle to ensure a 90° top view.
+
+2. **Cluster Detection:** Use blob detection to identify the holes in the paper. Ignore blobs too close to the image edge. Use a Gaussian Mixture Model with two centroids to locate the sit bones. Calculate the occurrence probability of each blob to given centroids. If this is below a threshold, the blobs are not considered further. Translate the distance between the two centroids in the image plane (pixels) into a real distance (cm), as the rectangle dimensions on the image are known.
+
+## Submission
+
+Please submit your solution by creating a new repository on your GitHub account. Include your Python notebook, any auxiliary files, and a README.md explaining your process and thought process.
+
+Remember, we're not just interested in the final product - we want to see how you got there. Commit early and often, with clear and informative commit messages.
+
+## Evaluation
+
+We'll evaluate your solution based on the accuracy of the sit bone distance measurement, the clarity of your code and documentation, and your reasoning behind the chosen approach. We encourage you to discuss what you expect to work well and potential issues your approach might have. If you have multiple ideas, please discuss their trade-offs.
+
+Good luck! We look forward to your innovative solutions.
