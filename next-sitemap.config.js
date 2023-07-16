@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://example.com',
+  siteUrl: 'https://apply.selectcode.de',
   generateRobotsTxt: true, // (optional)
 }
