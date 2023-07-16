@@ -1,5 +1,9 @@
 import '../style.css'
 
 export default function App({Component, pageProps}) {
-    return <Component {...pageProps} />
+    return <>
+        {process.env.NODE_ENV === "production" && <script async src="https://hi.selectcode.de/hallo" data-website-id="4d081040-924f-4b59-b261-ac3c79bd4188"/>}
+
+        <Component {...pageProps} />
+    </>
 }

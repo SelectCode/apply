@@ -9,5 +9,15 @@
   },
   "home": "🏠 Home",
   "getting_started": "🚀 Getting Started",
-  "challenges": "🏆 Challenges"
+  "---": {
+    "type": "separator"
+  },
+  "challenges": "🏆 Challenges",
+  "about-us": {
+    "title": "About us",
+    "type": "page",
+    "href": "https://www.selectcode.de/ueber-uns",
+    "newWindow": true
+  }
 }
+
