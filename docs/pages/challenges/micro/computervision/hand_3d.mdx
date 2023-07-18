@@ -1,0 +1,60 @@
+import {Callout} from 'nextra/components'
+
+
+# Computer Vision Challenge: Hand Detection
+
+## Introduction
+
+Welcome to the Sit Bone Measurement challenge! In this exercise, you will employ more advanced computer vision techniques such as machine learning, segmentation and 3d point cloud geometry.
+
+## Context
+
+<Callout type="info" emoji="ℹ️">
+    To learn more about the use case, visit [this page](./use_case)
+</Callout>
+
+We use an iPad Pro for our Profiler project to gather important measurements of the hand. These are used to calculate the right grip size and handle size for the customer.
+
+## Input
+
+<Callout type="info" emoji="ℹ️">
+    Make sure to use the original files from the repository, not the optimized web images.
+</Callout>
+
+### RGB Image
+
+![Image](/challenges/hand/rgb.jpg)
+
+### Depth Image
+Download [Point Cloud](/challenges/hand/point_cloud.gz)
+![Image](/challenges/hand/depth.png)
+
+## Libraries that help
+
+- `Open3D` https://github.com/isl-org/Open3D To load the point cloud
+- `Mediapipe` https://developers.google.com/mediapipe/solutions/vision/hand_landmarker
+- `OpenCV` https://github.com/opencv/opencv-python
+- `Scikit learn` https://github.com/scikit-learn/scikit-learn
+
+## Challenge
+
+Your task is to write a Python notebook that uses Mediapipe to find the hand landmarks, do a segmentation to find the handborders and then use the point cloud to find the hand width.
+
+You will use a provided image and apply the following high-level process:
+
+1. Use Mediapipe Hands to find the Hand Landmarks
+2. Use a segmentation algorithm to find the borders of the hand. You can either use 3D segmentation like DBScan or 2D segmentation like https://developers.google.com/mediapipe/solutions/vision/image_segmenter
+3. Find the handwidth by drawing a line through the knuckles to the edge of the hand.
+4. Use the 3D point cloud to get the 3D distance in cm
+
+## Submission
+
+Please submit your solution by creating a new repository on your GitHub account. Include your Python notebook, any auxiliary files, and a README.md explaining your process and thought process.
+
+Remember, we're not just interested in the final product - we want to see how you got there. Commit early and often, with clear and informative commit messages.
+
+## Evaluation
+We'll evaluate your solution based on the accuracy of the hand measurement, the clarity of your code and documentation, and your reasoning behind the chosen approach. We encourage you to discuss what you expect to work well and potential issues your approach might have. If you have multiple ideas, please discuss their trade-offs.
+
+
+Good luck! We look forward to your innovative solutions.

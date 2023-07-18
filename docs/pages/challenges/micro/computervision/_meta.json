@@ -1,4 +1,6 @@
 {
+  "use_case": "👀 Use Case",
   "quiz": "🧐 General Quiz",
-  "blob_detection": "🕳️ Blob Detection"
+  "blob_detection": "🕳️ Blob Detection",
+  "hand_3d": "👋 3D Hand Detection"
 }
