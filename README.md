@@ -27,7 +27,7 @@ Please refer to the individual challenge folders for any additional prerequisite
 ### Running the Project :runner:
 
 Please refer to the README file in each challenge folder for specific instructions on how to run and test the project.
-In general, most projects can be run with a command such as `pnpm start` or `yarn start` or with Docker commands (if
+In general, most projects can be run with a command such as `pnpm start` or with Docker commands (if
 containers are used).
 
 ### Submitting your Solution :mailbox:
