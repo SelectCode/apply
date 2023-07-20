@@ -51,7 +51,3 @@ To complete this challenge, please submit:
 - A `README.md` file explaining how to install any necessary dependencies, how to run your application, and how to run your tests.
 
 Please fork this repository to your own GitHub account, add your solutions, and send us the link when you're ready. Good luck!
-
----
-
-This challenge should provide a good understanding of the applicant's ability to design and implement an event-driven API, knowledge of NestJS, TypeScript, and testing skills, as well as their ability to implement an authentication system.
