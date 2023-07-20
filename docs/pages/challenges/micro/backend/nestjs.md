@@ -1,57 +1,57 @@
-# NestJS Challenge
+# NestJS Challenge: Task Management System
 
-Welcome to the NestJS Challenge! This challenge will test your ability to create a scalable application using NestJS,
-TypeScript, and an event-driven architecture with an event queue.
+Welcome to the NestJS Challenge! In this challenge, you'll demonstrate your ability to create a scalable task management system similar to Trello using NestJS, TypeScript, and an event-driven architecture.
 
-Before you start, you should be familiar with TypeScript, NestJS, and the basics of event-driven architecture. Here are
-some resources to get you started:
+Before you start, ensure you're comfortable with TypeScript, NestJS, event-driven architecture, and basic authentication strategies. The following resources may be helpful:
 
 - [TypeScript Official Documentation](https://www.typescriptlang.org/docs/)
 - [NestJS Official Documentation](https://docs.nestjs.com/)
-- [Understanding Event-driven Architecture](https://microservices.io/patterns/data/event-driven-architecture.html)
-
+- [Understanding Event-driven Architecture](https://docs.nestjs.com/techniques/events)
+- [Sessions and Cookies in Node.js](https://docs.nestjs.com/security/authentication)
+- [Nest.js Logging](https://docs.nestjs.com/techniques/logger)
+- [Nest.js TypeORM](https://docs.nestjs.com/techniques/database)
 ## Challenge Tasks:
 
-1. **API for a Book Store**
+1. **API for a Task Management System**
 
-   Your first task is to design and build a RESTful API for a book store using NestJS and TypeScript.
+   Your primary task is to design and build a RESTful API for a task management system using NestJS and TypeScript. The data should be persisted in a postgres database. Make sure to use docker-compose for launching the backend and database.
 
     - Your API should support the following operations:
-        - `GET /books/`: Retrieve a list of all books.
-        - `GET /books/{book_id}`: Retrieve the details of a specific book.
-        - `POST /books/`: Add a new book. The details of the book should be sent as JSON in the body of the request.
-        - `PUT /books/{book_id}`: Update the details of an existing book. The new details should be sent as JSON in the
-          body of the request.
-        - `DELETE /books/{book_id}`: Remove a book from the store.
-    - Each book should have at least the following properties:
-        - `id`: A string that serves as the unique identifier for the book.
-        - `title`: A string that contains the title of the book.
-        - `author`: A string that contains the name of the author.
-        - `publishedDate`: A string that contains the book's published date.
+        - `POST /auth/`: Authenticate a user and create a session.
+        - `GET /projects/`: Retrieve a list of all projects for a user.
+        - `POST /projects/`: Add a new project. The details of the project should be sent as JSON in the body of the request.
+        - `PUT /projects/{project_id}`: Update the details of an existing project. The new details should be sent as JSON in the body of the request.
+        - `DELETE /projects/{project_id}`: Remove a project.
+        - `GET /projects/{project_id}/tasks/`: Retrieve a list of tasks in a project.
+        - `POST /projects/{project_id}/tasks/`: Add a new task to a project.
+        - `PUT /projects/{project_id}/tasks/{task_id}`: Update the details of a task in a project.
+        - `DELETE /projects/{project_id}/tasks/{task_id}`: Remove a task from a project.
+    - Each project and task should have at least the following properties:
+        - `id`: A string that serves as the unique identifier.
+        - `name`: A string that contains the name of the project or task.
+        - `description`: A string that contains a short description.
+        - `createdDate`: A string that contains the date the project or task was created.
 
 2. **Event Queue and Event-driven Architecture**
 
-   Implement an event queue and use an event-driven architecture for updating book stock.
+   Implement an event queue and use an event-driven architecture for updating tasks and projects.
 
-    - When a book is added (`POST /books/`), an event should be published to the queue with the book details.
-    - When a book is removed (`DELETE /books/{book_id}`), an event should be published to the queue with the book id.
+    - When a task is added (`POST /projects/{project_id}/tasks/`), an event should be published to the queue with the task details.
+    - When a task is removed (`DELETE /projects/{project_id}/tasks/{task_id}`), an event should be published to the queue with the task id.
     - There should be a separate event listener which subscribes to these events and logs a message for each event.
 
 3. **Testing**
 
    Write tests for your API using Jest (the default testing framework for NestJS) to ensure it works as expected.
 
-To complete this challenge, you should submit the following:
+To complete this challenge, please submit:
 
 - The source code of your NestJS application.
 - Any tests you wrote for your application.
-- A `README.md` file that explains how to install any necessary dependencies, how to run your application, and how to
-  run your tests.
+- A `README.md` file explaining how to install any necessary dependencies, how to run your application, and how to run your tests.
 
-Please fork this repository to your own GitHub account, add your solutions, and send us the link when you are ready.
-Good luck!
+Please fork this repository to your own GitHub account, add your solutions, and send us the link when you're ready. Good luck!
 
 ---
 
-This challenge should give a good sense of the applicant's ability to design and implement an event-driven API,
-understanding of NestJS and TypeScript, and their ability to write effective tests.
+This challenge should provide a good understanding of the applicant's ability to design and implement an event-driven API, knowledge of NestJS, TypeScript, and testing skills, as well as their ability to implement an authentication system.
