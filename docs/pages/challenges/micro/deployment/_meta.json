@@ -1,5 +1,5 @@
 {
-  "deployment_approaches": "🤔 Deployment Approaches",
-  "docker": "🐳 Docker",
-  "kubernetes": "⚓️ Kubernetes"
+  "deployment_approaches": "Deployment Approaches",
+  "docker": "Docker",
+  "kubernetes": "Kubernetes"
 }

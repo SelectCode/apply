@@ -14,22 +14,22 @@ a database.
 This is an advanced challenge to show that you can build real world applications. If you want to be a Full-Stack
 Developer, then you can create and design the system on your own.
 
-TODO: Deploy the sample components somewhere.
-
 ### Backend
 
 The backend of your system should be capable of processing API requests for various operations, including user
 authentication, project and task management, and notification sending. It should be able to communicate with the
 database for storing and retrieving data.
 
-In the interest of speeding up development, you might want to use Hasura or Supabase or PocketBase, which provide
-out-of-the-box backends complete with authentication, database, and real-time capabilities.
-Use the free plan of nhost.io or supabase first. If you want you can add the services to your docker compose later.
+In the interest of speeding up development, you might want to use [Hasura](https://hasura.io/)
+or [supabase](https://supabase.com/) or [PocketBase](https://pocketbase.io/), which provide out-of-the-box backends
+complete with authentication, database, and real-time capabilities.
+Use the free plan of [nhost.io](https://nhost.io/) or [supabase](https://supabase.com/) first. If you want you can add
+the services to your docker compose later.
 Pocketbase has to be self hosted in your docker compose.
 This will speed up development a lot.
 
-If you want to expose your local running backend to the public service, because you need to recieve a webhook, then use
-ngrok as the service.
+If you want to expose your local running backend to the public service, because you need to receive a webhook, then use
+[ngrok](https://ngrok.com/) as the service.
 
 You could use one of those frameworks and languages:
 
@@ -48,7 +48,7 @@ Make sure to focus on a clean, modern design for your management system.
 ### Database
 
 Your system's database should be designed to efficiently store and retrieve data related to users, projects, and tasks.
-You should focus on using postgres as your primary database.
+You should focus on using [PostgreSQL](https://www.postgresql.org/) as your primary database.
 
 ## Communication
 
