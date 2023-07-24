@@ -64,5 +64,7 @@ We will evaluate your work based on the following:
 - **Code quality**: we're looking for clean, readable, and well-structured code.
 - **Documentation quality**: We're looking for a well-structured `README.md` file that contains all necessary
   information as well as well-documented code.
+- **Problem solving**: Remember, we're not just interested in the final product - we want to see how you got there.
+  Commit early and often, with clear and informative commit messages.
 
 Good luck with your coding — and remember to enjoy the process! 🚀

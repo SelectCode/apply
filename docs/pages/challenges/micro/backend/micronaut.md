@@ -72,5 +72,7 @@ We will evaluate your work based on the following:
 - **Test quality**: We're looking for well-structured and meaningful tests - so that the relevant cases are covered.
 - **Documentation quality**: We're looking for a well-structured `README.md` file that contains all necessary
   information as well as well-documented code.
+- **Problem solving**: Remember, we're not just interested in the final product - we want to see how you got there.
+  Commit early and often, with clear and informative commit messages.
 
 Good luck - and have fun! 🚀
