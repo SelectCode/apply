@@ -1,4 +1,4 @@
-# React Coding Challenge
+# React Challenge
 
 In this React coding challenge, you are tasked with building a simplified chess game. The purpose of this challenge is
 not to create a fully operational chess game but to demonstrate your understanding of React, to show your

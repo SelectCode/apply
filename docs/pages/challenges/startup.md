@@ -58,8 +58,8 @@ project creation, task assignment, and more.
 
 ## Deployment
 
-The entire system (frontend, backend, and database) should be deployed using Docker Compose, providing an easy way to
-run the application in any environment. Docker Compose will allow you to manage all of your services in one place,
+The entire system (frontend, backend, and database) should be deployed using `docker-compose`, providing an easy way to
+run the application in any environment. `docker-compose` will allow you to manage all of your services in one place,
 making it easy to start and stop your application, manage your database, and more.
 
 ## Core Functionality
