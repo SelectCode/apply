@@ -55,4 +55,14 @@ For completing this challenge, please ensure that you meet the following require
 - Your React application fulfills all described functional requirements.
 - A `README.md` file explains how to install any necessary dependencies and how to run your application.
 
+## Evaluation Criteria 🪄
+
+We will evaluate your work based on the following:
+
+- **Functional fit**: How well the functional requirements are fulfilled.
+- **Responsive design**: How well your page adapts to different screen sizes.
+- **Code quality**: we're looking for clean, readable, and well-structured code.
+- **Documentation quality**: We're looking for a well-structured `README.md` file that contains all necessary
+  information as well as well-documented code.
+
 Good luck with your coding — and remember to enjoy the process! 🚀

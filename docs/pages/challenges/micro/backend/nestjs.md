@@ -64,4 +64,16 @@ For completing this challenge, please ensure that you meet the following require
 - A `README.md` file explains how to install any necessary dependencies, how to run your application, and how to run
   your tests.
 
+## Evaluation Criteria 🪄
+
+We will evaluate your work based on the following:
+
+- **Functional quality**: How well the functional requirements are fulfilled.
+- **Code quality**: We're looking for clean, readable, and well-structured code.
+- **Test quality**: We're looking for well-structured and meaningful tests - so that the relevant cases are covered.
+- **Documentation quality**: We're looking for a well-structured `README.md` file that contains all necessary 
+  information as well as well-documented code.
+
+Best of luck with the challenge! We're excited to see your creative solutions. 🚀
+
 Good luck - and have fun! 🚀
