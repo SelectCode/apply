@@ -52,12 +52,15 @@ resources to get you started:
 
    Write tests for your API using Micronaut's built-in testing tools to ensure it works as expected.
 
-To complete this challenge, you should submit the following:
+## Definition of Done
 
-- The source code of your Micronaut application.
-- Any tests you wrote for your application.
-- A `README.md` file that explains how to install any necessary dependencies, how to run your application, and how to
-  run your tests.
+For completing this challenge, please ensure that you meet the following requirements:
 
-Please fork this repository to your own GitHub account, add your solutions, and send us the link when you are ready.
-Good luck!
+- Your Micronaut application fulfills all functional requirements (including the described API endpoints, input
+  validation and error handling).
+- Your application can be run using `docker-compose`.
+- The included tests all pass successfully.
+- A `README.md` file explains how to install any necessary dependencies, how to run your application, and how to run
+  your tests.
+
+Good luck - and have fun! 🚀

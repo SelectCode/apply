@@ -1,8 +1,10 @@
 # NestJS Challenge
 
-Welcome to the NestJS Challenge! In this challenge, you'll demonstrate your ability to create a scalable task management system similar to Trello using NestJS, TypeScript, and an event-driven architecture.
+Welcome to the NestJS Challenge! In this challenge, you'll demonstrate your ability to create a scalable task management
+system similar to Trello using NestJS, TypeScript, and an event-driven architecture.
 
-Before you start, ensure you're comfortable with TypeScript, NestJS, event-driven architecture, and basic authentication strategies. The following resources may be helpful:
+Before you start, ensure you're comfortable with TypeScript, NestJS, event-driven architecture, and basic authentication
+strategies. The following resources may be helpful:
 
 - [TypeScript Official Documentation](https://www.typescriptlang.org/docs/)
 - [NestJS Official Documentation](https://docs.nestjs.com/)
@@ -10,17 +12,22 @@ Before you start, ensure you're comfortable with TypeScript, NestJS, event-drive
 - [Sessions and Cookies in Node.js](https://docs.nestjs.com/security/authentication)
 - [Nest.js Logging](https://docs.nestjs.com/techniques/logger)
 - [Nest.js TypeORM](https://docs.nestjs.com/techniques/database)
+
 ## Challenge Tasks:
 
 1. **API for a Task Management System**
 
-   Your primary task is to design and build a RESTful API for a task management system using NestJS and TypeScript. The data should be persisted in a postgres database. Make sure to use docker-compose for launching the backend and database.
+   Your primary task is to design and build a RESTful API for a task management system using NestJS and TypeScript. The
+   data should be persisted in a postgres database. Make sure to use docker-compose for launching the backend and
+   database.
 
     - Your API should support the following operations:
         - `POST /auth/`: Authenticate a user and create a session.
         - `GET /projects/`: Retrieve a list of all projects for a user.
-        - `POST /projects/`: Add a new project. The details of the project should be sent as JSON in the body of the request.
-        - `PUT /projects/{project_id}`: Update the details of an existing project. The new details should be sent as JSON in the body of the request.
+        - `POST /projects/`: Add a new project. The details of the project should be sent as JSON in the body of the
+          request.
+        - `PUT /projects/{project_id}`: Update the details of an existing project. The new details should be sent as
+          JSON in the body of the request.
         - `DELETE /projects/{project_id}`: Remove a project.
         - `GET /projects/{project_id}/tasks/`: Retrieve a list of tasks in a project.
         - `POST /projects/{project_id}/tasks/`: Add a new task to a project.
@@ -36,18 +43,25 @@ Before you start, ensure you're comfortable with TypeScript, NestJS, event-drive
 
    Implement an event queue and use an event-driven architecture for updating tasks and projects.
 
-    - When a task is added (`POST /projects/{project_id}/tasks/`), an event should be published to the queue with the task details.
-    - When a task is removed (`DELETE /projects/{project_id}/tasks/{task_id}`), an event should be published to the queue with the task id.
+    - When a task is added (`POST /projects/{project_id}/tasks/`), an event should be published to the queue with the
+      task details.
+    - When a task is removed (`DELETE /projects/{project_id}/tasks/{task_id}`), an event should be published to the
+      queue with the task id.
     - There should be a separate event listener which subscribes to these events and logs a message for each event.
 
 3. **Testing**
 
    Write tests for your API using Jest (the default testing framework for NestJS) to ensure it works as expected.
 
-To complete this challenge, please submit:
+## Definition of Done
 
-- The source code of your NestJS application.
-- Any tests you wrote for your application.
-- A `README.md` file explaining how to install any necessary dependencies, how to run your application, and how to run your tests.
+For completing this challenge, please ensure that you meet the following requirements:
 
-Please fork this repository to your own GitHub account, add your solutions, and send us the link when you're ready. Good luck!
+- Your NestJS application fulfills all functional requirements (including the described API endpoints and event-driven
+  architecture).
+- Your application can be run using `docker-compose`.
+- The included tests all pass successfully.
+- A `README.md` file explains how to install any necessary dependencies, how to run your application, and how to run
+  your tests.
+
+Good luck - and have fun! 🚀
