@@ -3,15 +3,15 @@
 Use this template to report your progress on each challenge. For each section, provide as much detail as you can to help
 us understand your thought process, approach, and learnings.
 
-## Challenge Name: Computer Vision Challenge 01 (Replace with your challenge name)
+## Challenge Name: Computer Vision Challenge (TODO: Replace with your challenge)
 
 ### Status
 
 Please update the status of the challenge:
 
 - [ ] Not Started
-- [ ] In Progress
-- [ ] Completed
+- [ ] Partially Completed
+- [ ] Fully Completed
 
 *(Check the box that applies to your status)*
 
@@ -20,7 +20,7 @@ Please update the status of the challenge:
 If your challenge involves providing a text-based answer, please write it here. For coding challenges, include a link to
 your code repository or a brief description of your solution.
 
-*Example: "Created a convolutional neural network model for image classification using TensorFlow and Keras*
+*Example: "Created a convolutional neural network model for image classification using TensorFlow and Keras"*
 
 ### Approach
 

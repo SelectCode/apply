@@ -53,7 +53,8 @@ ecosystem.
 For completing this challenge, please ensure that you meet the following requirements:
 
 - Your React application fulfills all described functional requirements.
-- A `README.md` file explains how to install any necessary dependencies and how to run your application.
+- A `README.md` file explains how to install any necessary dependencies and how to run your application. Please also 
+  include a short description and explanation of the main aspects of your chosen approaches.
 
 ## Evaluation Criteria 🪄
 
