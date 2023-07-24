@@ -1,4 +1,4 @@
-# NestJS Challenge: Task Management System
+# NestJS Challenge
 
 Welcome to the NestJS Challenge! In this challenge, you'll demonstrate your ability to create a scalable task management system similar to Trello using NestJS, TypeScript, and an event-driven architecture.
 

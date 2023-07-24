@@ -1,4 +1,4 @@
-# Micronaut & Kotlin Challenge
+# Micronaut Challenge
 
 Welcome to the Micronaut & Kotlin Challenge! This challenge will test your ability to create a RESTful API using the
 Micronaut framework and Kotlin.
