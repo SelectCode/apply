@@ -56,6 +56,9 @@ For completing this challenge, please ensure that you meet the following require
 - A `README.md` file explains how to install any necessary dependencies and how to run your application. Please also 
   include a short description and explanation of the main aspects of your chosen approaches.
 
+As soon as you have finished both other challenges, please submit your solution in our [online form](https://tally.
+so/r/w5jbp6).
+
 ## Evaluation Criteria 🪄
 
 We will evaluate your work based on the following:
