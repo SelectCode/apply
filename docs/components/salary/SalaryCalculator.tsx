@@ -14,7 +14,7 @@ export default function SalaryCalculator() {
     }, [hours, experience, knowledge, responsibility]);
 
     const monthlySalary = useMemo(() => {
-        return (salary * hours * 13) / 3;
+        return salary * hours * 4;
     }, [salary, hours]);
 
     return (
