@@ -22,32 +22,59 @@ export const practicalExperienceComponent: SalaryComponent = {
         {
             level: 0,
             title: 'No experience',
-            criteria: ['No project experience', 'Orientation value: 0 years of experience']
+            criteria: [
+                'No project experience',
+                'Orientation value: 0 years of experience'
+            ]
         },
         {
             level: 1,
             title: 'Project experience',
-            criteria: ['First projects implemented on own, e.g. university projects or private projects', 'Solid experience in one technology', 'Orientation value: 1 year of experience']
+            criteria: [
+                'First projects implemented on own, e.g. university projects or private projects',
+                'Solid experience in one technology',
+                'Orientation value: 1 year of experience'
+            ]
         },
         {
             level: 2,
             title: 'Team experience',
-            criteria: ['Several own projects implemented, some of them in a team', 'Solid experience in several technologies or expert in one technology', 'Orientation: 2 years of experience or 1 year at SelectCode']
+            criteria: [
+                'Several own projects implemented, some of them in a team',
+                'Solid experience in several technologies or expert in one technology',
+                'Orientation: 2 years of experience or 1 year at SelectCode'
+            ]
         },
         {
             level: 3,
             title: 'Fullstack Dev',
-            criteria: ['Expert in multiple technologies', 'Can easily learn unfamiliar topics & technologies', 'Has understanding / experience in project management & customer communication', 'Can design simple system architectures', 'Can debug & fix cross-component bugs', 'Can be deployed as a fullstack dev in our projects', 'Orientation value: 4 years of experience or 3 years at SelectCode']
+            criteria: [
+                'Expert in multiple technologies',
+                'Can easily learn unfamiliar topics & technologies',
+                'Has understanding / experience in project management & customer communication',
+                'Can design simple system architectures',
+                'Can debug & fix cross-component bugs',
+                'Can be deployed as a fullstack dev in our projects',
+                'Orientation value: 4 years of experience or 3 years at SelectCode'
+            ]
         },
         {
             level: 4,
             title: 'Architect / Project Manager',
-            criteria: ['Advanced knowledge such as communication & interrelationships of services', 'Can make strategic decisions for projects - both technically and commercially', 'Can lead a team', 'Can work as an architect / project manager on our projects', 'Orientation value: 6 years of experience or 5 years at SelectCode']
+            criteria: [
+                'Advanced knowledge such as communication & interrelationships of services',
+                'Can make strategic decisions for projects - both technically and commercially',
+                'Can lead a team',
+                'Can work as an architect / project manager on our projects',
+                'Orientation value: 6 years of experience or 5 years at SelectCode'
+            ]
         },
         {
             level: 5,
             title: 'Tech Lead',
-            criteria: ['Able to design complete enterprise architectures and implement components']
+            criteria: [
+                'Able to design complete enterprise architectures and implement components'
+            ]
         }
     ]
 };
@@ -63,17 +90,28 @@ export const knowledgeComponent: SalaryComponent = {
         {
             level: 1,
             title: 'Initial Knowledge',
-            criteria: ['Computer science baccalaureate or first introductory lectures', 'Orientation value: Beginning of studies']
+            criteria: [
+                'Computer science baccalaureate or first introductory lectures',
+                'Orientation value: Beginning of studies'
+            ]
         },
         {
             level: 2,
             title: 'Basic knowledge',
-            criteria: ['Knows basic concepts & ways of working, e.g.agile working / scrum, roles in the team, merge requests', 'Has basic knowledge of topics in software engineering, e.g. algorithms & data structures, operating systems, databases', 'Orientation value: Currently in Bachelor']
+            criteria: [
+                'Knows basic concepts & ways of working, e.g.agile working / scrum, roles in the team, merge requests',
+                'Has basic knowledge of topics in software engineering, e.g. algorithms & data structures, operating systems, databases',
+                'Orientation value: Currently in Bachelor'
+            ]
         },
         {
             level: 3,
             title: 'Advanced knowledge',
-            criteria: ['Knows advanced concepts & processes in software engineering, e.g. networking, IT security, software quality', 'Is an expert in a tech area (e.g., backend, web front-end, app, infrastructure, machine learning, computer vision)', 'Orientation value: completed bachelor\'s degree, currently in master\'s program']
+            criteria: [
+                'Knows advanced concepts & processes in software engineering, e.g. networking, IT security, software quality',
+                'Is an expert in a tech area (e.g., backend, web front-end, app, infrastructure, machine learning, computer vision)',
+                'Orientation value: completed bachelor\'s degree, currently in master\'s program'
+            ]
         },
         {
             level: 4,
@@ -89,7 +127,10 @@ export const knowledgeComponent: SalaryComponent = {
         {
             level: 5,
             title: 'Expert & big picture view',
-            criteria: ['Has an overview of the IT industry', 'Knows about trends in the IT industry and among competitors']
+            criteria: [
+                'Has an overview of the IT industry',
+                'Knows about trends in the IT industry and among competitors'
+            ]
         },
     ]
 };
@@ -100,32 +141,50 @@ export const responsibilityComponent: SalaryComponent = {
         {
             level: 0,
             title: 'No responsibility',
-            criteria: ['Works in a team without project responsibility']
+            criteria: [
+                'Works in a team without project responsibility'
+            ]
         },
         {
             level: 1,
             title: 'Partial project manager',
-            criteria: ['Responsible for technical component in a project, i.e. has overview of development, does code reviews']
+            criteria: [
+                'Responsible for technical component in a project, i.e. has overview of development',
+                'Does code reviews',
+                'OR: Deputy S Project Manager',
+            ]
         },
         {
             level: 2,
             title: 'S Project manager / Division head without team',
-            criteria: ['Responsible for small customer project with up to 15k annual revenue', 'OR: Responsible for internal area in the company without team']
+            criteria: [
+                'Responsible for small customer project with up to 15k annual revenue',
+                'Deputy M Project Manager',
+                'OR: Responsible for internal area in the company without team'
+            ]
         },
         {
             level: 3,
             title: 'M Project Manager / Division head with Team',
-            criteria: ['Responsible for medium sized customer project with up to 100k annual revenue', 'OR: Responsible for internal area in the company with team']
+            criteria: [
+                'Responsible for medium sized customer project with up to 100k annual revenue',
+                'Deputy L Project Manager',
+                'OR: Responsible for internal area in the company with team'
+            ]
         },
         {
             level: 4,
             title: 'L Project Manager',
-            criteria: ['Responsible for large customer project with up to 500k annual revenue']
+            criteria: [
+                'Responsible for large customer project with up to 500k annual revenue'
+            ]
         },
         {
             level: 5,
             title: 'Managing Director',
-            criteria: ['Responsible for the entire company with up to 1 million annual turnover']
+            criteria: [
+                'Responsible for the entire company with up to 1 million annual turnover'
+            ]
         }
     ]
 };
