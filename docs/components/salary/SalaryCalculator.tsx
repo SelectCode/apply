@@ -13,10 +13,16 @@ export default function SalaryCalculator() {
     const [knowledge, setKnowledge] = useState(1);
     const [responsibility, setResponsibility] = useState(1);
 
+    /**
+     * Used to calculate the responsibility outcome and round it to the nearest 0.5.
+     */
+    const responsibilityOutCome = useMemo(() => {
+        const outcome = Math.pow(1.4, responsibility);
+        return Math.round(outcome * 2) / 2;
+    }, [responsibility]);
+
     const salary = useMemo(() => {
-        return Math.round(
-            12 + hours / 4 + experience + knowledge + Math.pow(1.4, responsibility)
-        );
+        return 12 + hours / 4 + experience + knowledge + responsibilityOutCome;
     }, [hours, experience, knowledge, responsibility]);
 
     const monthlySalary = useMemo(() => {
@@ -85,7 +91,7 @@ export default function SalaryCalculator() {
                 step={1}
                 value={responsibility}
                 onChange={setResponsibility}
-                outcome={`+${Math.pow(1.4, responsibility).toFixed(2)}€`}
+                outcome={`+${responsibilityOutCome.toFixed(2)}€`}
                 descriptions={[
                     "No responsibility",
                     "Technical Expert, Code Reviews, Architecture Decisions",
