@@ -1,5 +1,11 @@
-import exp from "constants";
 import {useMemo, useState} from "react";
+import {
+    hoursComponent,
+    knowledgeComponent,
+    practicalExperienceComponent,
+    responsibilityComponent,
+    SalaryComponent
+} from "@components/salary/SalaryModel";
 
 export default function SalaryCalculator() {
     const [hours, setHours] = useState(12);
@@ -7,10 +13,16 @@ export default function SalaryCalculator() {
     const [knowledge, setKnowledge] = useState(1);
     const [responsibility, setResponsibility] = useState(1);
 
+    /**
+     * Used to calculate the responsibility outcome and round it to the nearest 0.5.
+     */
+    const responsibilityOutCome = useMemo(() => {
+        const outcome = Math.pow(1.4, responsibility);
+        return Math.round(outcome * 2) / 2;
+    }, [responsibility]);
+
     const salary = useMemo(() => {
-        return Math.round(
-            12 + hours / 4 + experience + knowledge + Math.pow(1.4, responsibility)
-        );
+        return 12 + hours / 4 + experience + knowledge + responsibilityOutCome;
     }, [hours, experience, knowledge, responsibility]);
 
     const monthlySalary = useMemo(() => {
@@ -30,17 +42,19 @@ export default function SalaryCalculator() {
                 </div>
             </div>
             <Slider
+                salaryComponent={hoursComponent}
                 min={12}
                 max={20}
-                title="Hours / week"
+                step={2}
                 value={hours}
                 onChange={setHours}
                 outcome={`+${(hours / 4).toFixed(2)}€`}
             />
             <Slider
+                salaryComponent={practicalExperienceComponent}
                 min={0}
                 max={5}
-                title="Practical Experience"
+                step={1}
                 value={experience}
                 onChange={setExperience}
                 outcome={`+${experience.toFixed(2)}€`}
@@ -54,9 +68,10 @@ export default function SalaryCalculator() {
                 ]}
             />
             <Slider
+                salaryComponent={knowledgeComponent}
                 min={0}
                 max={5}
-                title="Theorical Knowledge"
+                step={1}
                 value={knowledge}
                 onChange={setKnowledge}
                 outcome={`+${knowledge.toFixed(2)}€`}
@@ -70,12 +85,13 @@ export default function SalaryCalculator() {
                 ]}
             />
             <Slider
+                salaryComponent={responsibilityComponent}
                 min={0}
                 max={5}
-                title="Responsibility"
+                step={1}
                 value={responsibility}
                 onChange={setResponsibility}
-                outcome={`+${Math.pow(1.4, responsibility).toFixed(2)}€`}
+                outcome={`+${responsibilityOutCome.toFixed(2)}€`}
                 descriptions={[
                     "No responsibility",
                     "Technical Expert, Code Reviews, Architecture Decisions",
@@ -99,17 +115,19 @@ export default function SalaryCalculator() {
 }
 
 function Slider({
+                    salaryComponent,
                     min,
                     max,
-                    title,
+                    step,
                     value,
                     onChange,
                     outcome,
                     descriptions,
                 }: {
+    salaryComponent: SalaryComponent;
     min: number;
     max: number;
-    title: string;
+    step: number;
     value: number;
     onChange: (value: number) => void;
     outcome: string;
@@ -119,7 +137,7 @@ function Slider({
         <div className="my-10">
             <h2 className="flex flex-row justify-between">
         <span className="text-xl font-bold">
-          {title} · {value}
+          {salaryComponent.title} · {value}
         </span>
                 <span className="text-right text-lg text-success font-bold">
           {outcome}
@@ -133,7 +151,7 @@ function Slider({
                     value={value}
                     onChange={(e) => onChange(parseInt(e.target.value))}
                     className="range"
-                    step="1"
+                    step={step}
                 />
                 <div className="w-full flex justify-between text-xs px-2">
                     {new Array(max - min + 1).fill(0).map((_, i) => (
@@ -142,8 +160,10 @@ function Slider({
                 </div>
             </div>
             {descriptions && (
-                <div className="text-center font-bold">
-                    <span>{descriptions[value - min]}</span>
+                <div className="text-left">
+                    <ul>
+                        {salaryComponent.levels[value - min].criteria.map((it) => (<li>{it}</li>))}
+                    </ul>
                 </div>
             )}
         </div>
