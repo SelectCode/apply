@@ -149,7 +149,7 @@ export const responsibilityComponent: SalaryComponent = {
             level: 1,
             title: 'Partial project manager',
             criteria: [
-                'Responsible for technical component in a project, i.e. has overview of development',
+                'Responsible for technical component in a project (e.g. is the tech lead of the backend of a project)',
                 'Does code reviews',
                 'OR: Deputy S Project Manager',
             ]
@@ -158,25 +158,25 @@ export const responsibilityComponent: SalaryComponent = {
             level: 2,
             title: 'S Project manager / Division head without team',
             criteria: [
-                'Responsible for small customer project with up to 15k annual revenue',
+                'S Project Manager: Responsible for small customer project with up to 15k annual revenue',
                 'Deputy M Project Manager',
-                'OR: Responsible for internal area in the company without team'
+                'OR: Responsible for an internal division in the company without team'
             ]
         },
         {
             level: 3,
             title: 'M Project Manager / Division head with Team',
             criteria: [
-                'Responsible for medium sized customer project with up to 100k annual revenue',
+                'M Project Manager: Responsible for medium sized customer project with up to 100k annual revenue',
                 'Deputy L Project Manager',
-                'OR: Responsible for internal area in the company with team'
+                'OR: Responsible for an internal division in the company with a team'
             ]
         },
         {
             level: 4,
             title: 'L Project Manager',
             criteria: [
-                'Responsible for large customer project with up to 500k annual revenue'
+                'L Project Manager: Responsible for large customer project with up to 500k annual revenue'
             ]
         },
         {
