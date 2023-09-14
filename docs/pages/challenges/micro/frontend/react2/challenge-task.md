@@ -58,7 +58,7 @@ With this request a JWT for the authentification of the user is generated and se
 This token has to be included in the request header of each GraphQL query/mutation. Else, access will be denied. 😈
 
 The requests have to be sent to this URL: https://react-challenge.deploy.selectcode.dev/v1/graphql.
-One of the header titles of each request must be set to "Authorization" and the value to "Bearer <JWT>".
+One of the header titles of each request must be set to "Authorization" and the value to "Bearer < JWT > ".
 
 
 
@@ -75,8 +75,7 @@ As soon as you have finished both other challenges, please submit your solution 
 
 We will evaluate your work based on the following:
 - Functional fit: How well the functional requirements are fulfilled.
-- Design: We’re looking for a user-friendly and intuitive design. 
-- Responsive design: How well your page adapts to different screen sizes.
+- Design: We’re looking for a user-friendly and intuitive design. Moreover, your page should adapt to different screen sizes.
 - Code quality: We're looking for clean, readable, and well-structured code.
 - Documentation quality: We're looking for a well-structured README.md file that contains all necessary information as well as well-documented code.
 - Problem solving: Remember, we're not just interested in the final product - we want to see how you got there. Commit early and often, with clear and informative commit messages.
