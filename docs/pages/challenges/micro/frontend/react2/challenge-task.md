@@ -24,7 +24,8 @@ Project_id of project, task_id, created_at and email_address are automatically s
 7.	Delete a task
 8.	Display all tasks for a specific project
 
-The backend provides all necessary methods.
+The backend provides all necessary methods. You can take a look at them in the included [.yaml file](ReactChallenge2Insomnia.yaml). Best to be opened in Insomnia (https://insomnia.rest/download).  
+
 
 Additional details:
 
