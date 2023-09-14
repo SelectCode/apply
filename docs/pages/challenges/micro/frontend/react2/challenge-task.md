@@ -49,7 +49,7 @@ The flow is as follows:
 First, a HTTP post request must be sent to this url: *** . 
 The body of the request must be in JSON and include a parameter called “email” with the value of the user’s email address.
 
-```
+```json
 {
   "email": "test@selectcode.de"
 }
