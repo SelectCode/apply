@@ -20,9 +20,10 @@ Project_id of project, task_id, created_at and email_address are automatically s
 3.	Delete a project
 4.	Display all projects
 5.	Create a new task for an existing project with a project_id, name, description and status. The status is set to OPEN by default. 
-6.	Edit name, description and status of a task
-7.	Delete a task
-8.	Display all tasks for a specific project
+6.	Edit name and description of a task
+7.	Change the status of a task
+8.	Delete a task
+9.	Display all tasks for a specific project
 
 The backend provides all necessary methods. You can take a look at them in the included [.yaml file](ReactChallenge2Insomnia.yaml). Best to be opened in Insomnia (https://insomnia.rest/download).  
 
@@ -39,9 +40,11 @@ Additional details:
 The backend uses Hasura to create an API, Postgres as a database, 
 GraphQL for the requests and Cloudflare workers to generate JWTs (https://jwt.io/introduction) needed for authorization. 
 
+![Unbenanntes Diagramm](https://github.com/SelectCode/apply/assets/142333901/b1b6f3b3-5d61-43df-9526-773d13b1589b)
+
 
 Each project is exclusively mapped to a single user through their email-address. By that, the respective tasks are restricted to the creator of the project as well. 
-Users can only create, access, edit and delete their own projects and therefore tasks. 
+Users can only create, access, edit and delete their own projects and taks and do not have access to the projects and tasks of other users. 
 This is guaranteed by the Hasura JWT Authentication service (https://hasura.io/docs/latest/auth/authentication/jwt/). 
 
 
@@ -60,6 +63,10 @@ This token has to be included in the request header of each GraphQL query/mutati
 
 The requests have to be sent to this URL: https://react-challenge.deploy.selectcode.dev/v1/graphql.
 One of the header titles of each request must be set to "Authorization" and the value to "Bearer < JWT > ".
+
+```
+Authorization        Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiLCJhZG1pbiJdLCJ4LWhhc3VyYS11c2VyLWVtYWlsLWFkZHJlc3MiOiJ0ZXN0QHNlbGVjdGNvZGUuZGUifSwiaWF0IjoxNjk1MTMyMjg4fQ.ytE-IrCfyKJOBVB5x-yWw8bTDHgmaGQ3RBtmeeXwXvw
+```
 
 
 
