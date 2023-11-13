@@ -149,7 +149,7 @@ export const responsibilityComponent: SalaryComponent = {
             level: 1,
             title: 'Partial project manager',
             criteria: [
-                'Responsible for technical component in a project (e.g. is the tech lead of the backend of a project)',
+                'Responsible for a technical component in a project (e.g. is the tech lead of the backend of a project)',
                 'Does code reviews',
                 'OR: Deputy S Project Manager',
             ]
