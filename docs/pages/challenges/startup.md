@@ -1,88 +1,78 @@
-# Task Management System
+# Task Management System Challenge 🚀
 
-In this challenge, you are expected to design and implement a task management system similar to Trello. Your system will
-allow users to create projects, add tasks to those projects, assign tasks to users, and monitor task progress. You can
-opt to create custom components or leverage pre-existing tools like Hasura or Supabase for faster development.
+## Context and Motivation 🌟
 
-## Description
+Welcome to the SelectCode Task Management System Challenge! 🎉 This challenge is designed to simulate the development tasks you might encounter while working on meinGPT, our AI platform. By participating, you'll not only showcase your engineering skills but also demonstrate how you approach and solve complex problems. This challenge helps us understand your thought process and determine how well you'd fit into our team and our way of working. 🤝
 
-The task management system is an application composed of three main components: a backend server, a frontend client, and
-a database.
+## Challenge Description 📋
 
-## How this challenge works:
+Your task is to design and implement a task management system similar to Trello. This system should allow users to create projects, add tasks to those projects, assign tasks to users, and monitor task progress. 📊
 
-This is an advanced challenge to show that you can build real world applications. If you want to be a Full-Stack
-Developer, then you can create and design the system on your own.
+## Technical Requirements 🛠️
 
-### Backend
+### Backend 🖥️
 
-The backend of your system should be capable of processing API requests for various operations, including user
-authentication, project and task management, and notification sending. It should be able to communicate with the
-database for storing and retrieving data.
+- Language: TypeScript 📘
+- Framework: Node.js-based framework of your choice (e.g., Express, Nest.js, ...) 🔧
+- Database: PostgreSQL 🐘
+- API: REST or GraphQL (tRPC is recommended but not mandatory) 🌐
 
-In the interest of speeding up development, you might want to use [Hasura](https://hasura.io/)
-or [supabase](https://supabase.com/) or [PocketBase](https://pocketbase.io/), which provide out-of-the-box backends
-complete with authentication, database, and real-time capabilities.
-Use the free plan of [nhost.io](https://nhost.io/) or [supabase](https://supabase.com/) first. If you want you can add
-the services to your docker compose later.
-Pocketbase has to be self hosted in your docker compose.
-This will speed up development a lot.
+### Frontend 🎨
 
-If you want to expose your local running backend to the public service, because you need to receive a webhook, then use
-[ngrok](https://ngrok.com/) as the service.
+- Language: TypeScript 📘
+- Framework: React.js, Next.js, Svelte, or a similar modern frontend framework 🖼️
 
-You could use one of those frameworks and languages:
+### Deployment 🚢
 
-- Typescript / Nest.js [Preferred]
-- Kotlin / Micronaut
-- Python / FastAPI
+- The entire system (frontend, backend, and database) should be deployed using `docker-compose`. 🐳
 
-### Frontend
+## Core Functionality ✅
 
-The frontend of your system should provide a user-friendly interface for interacting with the backend. This could be a
-web-based UI that makes HTTP requests to the backend for different operations, or a mobile app that does the same.
-For the mobile app we use Flutter, for the web frontend React.js or Next.js. If you want you can use a tool like
-refine.dev to further quickstart your application.
-Make sure to focus on a clean, modern design for your management system.
+1. **Project Creation and Management**: Users should be able to create and manage projects. 📁
+2. **Task Creation and Assignment**: Users should be able to create tasks for projects, assign them to other users, and update their status. ✏️
+3. **Task Overview**: Implement an intuitive dashboard or board view that allows users to visualize all tasks at a glance, including their current status, assignees, and any other relevant information. 👀
 
-### Database
+## Optional Features 🌈
 
-Your system's database should be designed to efficiently store and retrieve data related to users, projects, and tasks.
-You should focus on using [PostgreSQL](https://www.postgresql.org/) as your primary database.
+1. **User Authentication**: Users should be able to register, log in, and log out of the system. 🔐
+2. **User Roles and Permissions**: Implement a system of user roles and permissions to control access to tasks and projects. 👑
+3. **Notification System**: Users should receive notifications when a task is assigned to them or when a task's deadline is approaching. 🔔
+4. **Comments and File Attachments**: Let users leave comments on tasks and attach relevant files. 💬📎
 
-## Communication
+## Implementation Guidelines 📝
 
-Communication between the frontend and backend should occur through a well-defined API, using either REST or GraphQL.
-This API should provide endpoints or operations for all of the necessary functionality, including user authentication,
-project creation, task assignment, and more.
+- Focus on implementing the core functionality first before adding optional features. 🎯
+- Your code should be of production quality. Pay attention to:
+  - Clean, readable, and well-structured code organization 🧹
+  - Appropriate commenting and documentation 📚
+  - Implementation of tests (unit tests, integration tests) 🧪
+  - Error handling and logging 🚨
+- Consider best practices for security and data privacy. 🔒
+- Keep in mind the scalability and maintainability of your code. 📈
 
-## Deployment
+## Evaluation Criteria 🏆
 
-The entire system (frontend, backend, and database) should be deployed using `docker-compose`, providing an easy way to
-run the application in any environment. `docker-compose` will allow you to manage all of your services in one place,
-making it easy to start and stop your application, manage your database, and more.
+We will evaluate your work based on the following:
 
-## Core Functionality
+- **Functional quality**: How well the functional requirements are fulfilled. ✨
+- **Code quality**: We're looking for clean, readable, and well-structured code. 💎
+- **Test quality**: We're looking for well-structured and meaningful tests - so that the relevant cases are covered. 🎯
+- **Documentation quality**: We're looking for a well-structured `README.md` file that contains all necessary information as well as well-documented code. 📖
+- **Problem solving**: Remember, we're not just interested in the final product - we want to see how you got there. Commit early and often, with clear and informative commit messages. 🧠
 
-Here are the core functionalities that your system should implement:
+## Submission 📤
 
-1. **Project Creation and Management**: Authenticated users should be able to create and manage projects.
-2. **Task Creation and Assignment**: Users should be able to create tasks, assign them to other users, and monitor their
-   progress.
+- Provide your code in a public GitHub repository. 🐙
+- Include a README file that contains:
+  - An overview of your application's architecture 🏗️
+  - Installation instructions 🔧
+  - Guide on how to start the application using docker-compose 🐳
+  - Explanation of important design decisions 💡
+  - List of implemented features (core and optional) ✅
+- If you've implemented any special or unique features, please highlight them in your README. 🌟
 
-## Optional Features
+## Questions? ❓
 
-Here are some additional features that you might consider implementing if you have time:
+If you have any questions or need clarification, please don't hesitate to email Stephan. We're here to help! 📧
 
-1. **User Authentication**: Users should be able to register, log in, and log out of the system.
-2. **Task Prioritization**: Allow users to prioritize tasks within a project.
-3. **Progress Tracking**: Provide a visual representation of task and project progress.
-4. **Comments and File Attachments**: Let users leave comments on tasks and attach relevant files.
-5. **User Roles and Permissions**: Implement a system of user roles and permissions to control access to tasks and
-   projects.
-6. **Notification System**: Users should receive notifications when a task is assigned to them or when a task's
-   deadline
-   is approaching.
-
-Remember, the most important aspect of this challenge is creating a functional application. Focus on implementing the
-core functionality first, then work on optional features as time permits. Good luck!
+Good luck with the challenge! We look forward to seeing your innovative and well-implemented solution. 🍀🚀
