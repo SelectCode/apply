@@ -8,11 +8,9 @@ Welcome to the SelectCode RAG-based Meeting Improvement Challenge! 🎉 At Selec
 
 Your task is to design and implement a data pipeline that processes meeting transcripts and uses RAG to either make our meetings more efficient or more entertaining. You have the freedom to approach this challenge from either a practical or humorous angle - or both!
 
-Here you can find the meeting transcripts: [Meetings transcripts](https://drive.google.com/drive/folders/1S7hJ5U6nGClbatBSZuaQpzsaA6Q2ElE3)
-
 ## Technical Requirements 🛠️
 
-- You will be provided with 7 meeting transcripts in VTT format (output from MS Teams).
+- You will be provided with 7 meeting transcripts in VTT format (output from MS Teams). You can find them [here](https://drive.google.com/drive/folders/1S7hJ5U6nGClbatBSZuaQpzsaA6Q2ElE3).
 - You have the freedom to choose your preferred programming languages, frameworks, and tools.
 - Your solution should demonstrate a well-designed data pipeline that incorporates RAG techniques.
 
@@ -26,9 +24,9 @@ Here you can find the meeting transcripts: [Meetings transcripts](https://drive.
 
 - Focus on creating a robust and scalable data pipeline.
 - Your code should be of production quality. Pay attention to:
-  - Clean, readable, and well-structured code organization 🧹
-  - Appropriate commenting and documentation 📚
-  - Error handling and logging 🚨
+  - Clean, readable, and well-structured code organization
+  - Appropriate commenting and documentation
+  - Error handling and logging
 - Consider best practices for data processing and RAG implementation.
 - Be creative! We're interested in novel approaches to making meetings more efficient or enjoyable.
 
@@ -53,10 +51,6 @@ We will evaluate your work based on the following:
   - Any assumptions you made and why 🤔
   - Ideas for future improvements or extensions of your solution 🚀
 - If you've implemented any particularly unique or innovative features, please highlight them in your README. 🌟
-
-## Resources 📚
-
-[Placeholder for RAG resources and references]
 
 ## Questions? ❓
 
