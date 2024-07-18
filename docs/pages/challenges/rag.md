@@ -43,14 +43,15 @@ We will evaluate your work based on the following:
 
 ## Submission 📤
 
-- Provide your code in a public GitHub repository. 🐙
+- Provide your code in a public GitHub / GitLab repository.
 - Include a README file that contains:
-  - An overview of your solution's architecture 🏗️
-  - Installation and usage instructions 🔧
-  - Explanation of your RAG implementation and how it addresses the challenge 💡
-  - Any assumptions you made and why 🤔
-  - Ideas for future improvements or extensions of your solution 🚀
+  - An overview of your solution's architecture
+  - Installation and usage instructions
+  - Explanation of your RAG implementation and how it addresses the challenge
+  - Any assumptions you made and why
+  - Ideas for future improvements or extensions of your solution
 - If you've implemented any particularly unique or innovative features, please highlight them in your README. 🌟
+- Send all this information via email to Stephan (stephan.le@selectcode.de).
 
 ## Questions? ❓
 

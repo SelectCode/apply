@@ -65,7 +65,7 @@ We will evaluate your work based on the following:
 
 ## Submission
 
-- Provide your code in a public GitHub repository.
+- Provide your code in a public GitHub / GitLab repository.
 - Include a README file that contains:
   - An overview of your application's architecture
   - Installation instructions
@@ -73,6 +73,7 @@ We will evaluate your work based on the following:
   - Explanation of important design decisions
   - List of implemented features (core and optional)
 - If you've implemented any special or unique features, please highlight them in your README.
+- Send all this information via email to Stephan (stephan.le@selectcode.de).
 
 ## Questions?
 
