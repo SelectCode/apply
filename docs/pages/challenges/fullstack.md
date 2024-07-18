@@ -33,6 +33,8 @@ Your task is to design and implement a task management system similar to Trello.
 2. **Task Creation and Assignment**: Users should be able to create tasks for projects, assign them to other users, and update their status.
 3. **Task Overview**: Implement an intuitive dashboard or board view that allows users to visualize all tasks at a glance, including their current status, assignees, and any other relevant information.
 
+Regarding the UI/UX: Feel free to be creative! But: While a polished UI is nice, we're more interested in functionality and code quality. Focus on creating a clean, usable interface.
+
 ## Optional Features
 
 1. **User Authentication**: Users should be able to register, log in, and log out of the system.
