@@ -15,7 +15,7 @@ Your task is to design and implement a task management system similar to Trello.
 - Language: TypeScript 📘
 - Framework: Node.js-based framework of your choice (e.g., Express, Nest.js, ...) 🔧
 - Database: PostgreSQL 🐘
-- API: REST or GraphQL (tRPC is recommended but not mandatory) 🌐
+- API: REST / GraphQL / tRPC (used in our project, recommended but not mandatory) 🌐
 
 ### Frontend 🎨
 
