@@ -2,7 +2,7 @@
 
 ## Context and Motivation 🌟
 
-Welcome to the SelectCode RAG-based Meeting Improvement Challenge! 🎉 At SelectCode, we're facing a common corporate challenge: making technical knowledge more accessbible. We're turning to you, our innovative applicants, to help us address this using Retrieval Augmented Generation (RAG) techniques.
+Welcome to the SelectCode RAG-based Knowledge Extraction Challenge! 🎉 At SelectCode, we're facing a common corporate challenge: making technical knowledge more accessbible. We're turning to you, our innovative applicants, to help us address this using Retrieval Augmented Generation (RAG) techniques.
 
 ## Challenge Description 📋
 
