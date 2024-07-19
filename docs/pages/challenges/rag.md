@@ -6,13 +6,17 @@ Welcome to the SelectCode RAG-based Meeting Improvement Challenge! 🎉 At Selec
 
 ## Challenge Description 📋
 
-Your task is to design and implement a data pipeline that processes meeting transcripts and uses RAG to either make our meetings more efficient or more entertaining. You have the freedom to approach this challenge from either a practical or humorous angle - or both!
+Your task is to design and implement a data pipeline that processes meeting transcripts and uses RAG to either make these meetings more efficient or more entertaining. You have the freedom to approach this challenge from either a practical or humorous angle - or both!
 
 ## Technical Requirements 🛠️
 
 - You will be provided with 7 meeting transcripts in VTT format (output from MS Teams). You can find them [here](https://drive.google.com/drive/folders/1S7hJ5U6nGClbatBSZuaQpzsaA6Q2ElE3).
 - You have the freedom to choose your preferred programming languages, frameworks, and tools.
+  - Focus on using RAG/LLM tools that are open-source or provide free API keys for evaluation
 - Your solution should demonstrate a well-designed data pipeline that incorporates RAG techniques.
+  - You should pay attention to the classic RAG workflow like preprocessing the data, generating embeddings, ingesting chunks into a vector database, etc.
+  - Optional techniques that show domain knowledge are also appreciated (e.g. reranking of results)
+  - It's important to automate analyzing the transcripts and find concrete points of improvement in the meetings
 
 ## Core Functionality ✅
 
@@ -57,4 +61,4 @@ We will evaluate your work based on the following:
 
 If you have any questions or need clarification, please don't hesitate to reach out. We're here to help! 📧
 
-Good luck with the challenge! We're excited to see your creative and effective solutions to improve our meeting culture. 🍀🚀
+Good luck with the challenge! We're excited to see your creative and effective solutions to improve meeting culture. 🍀🚀
