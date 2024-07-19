@@ -1,4 +1,4 @@
-# RAG-based Meeting Improvement Challenge 🚀
+# RAG-based Knowledge Extraction Challenge 🚀
 
 ## Context and Motivation 🌟
 
