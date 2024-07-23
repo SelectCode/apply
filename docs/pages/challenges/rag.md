@@ -38,7 +38,7 @@ Your task is to design and implement a data pipeline that processes technical do
 
 We will evaluate your work based on the following:
 
-- **Functional quality**: How well does your solution address the problem of improving meetings?
+- **Functional quality**: How well does your solution address the problem of extracting and accessing knowledge?
 - **Code quality**: We're looking for clean, readable, and well-structured code.
 - **Pipeline design**: How well-designed and scalable is your data processing pipeline?
 - **RAG implementation**: How effectively have you utilized RAG techniques?
