@@ -1,7 +1,7 @@
 {
 	"dependencies": {
 		"clsx": "^2.0.0",
-		"framer-motion": "^10.15.0",
+		"framer-motion": "^10.16.4",
 		"next": "^13.4.12",
 		"next-sitemap": "^4.1.8",
 		"nextra": "^2.10.0",
